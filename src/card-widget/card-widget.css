@@ -1,0 +1,40 @@
+.card-widget {
+    width: 500px;
+    background-color: #fff;
+    border: 2px solid #676767;
+    border-radius: 5px;
+}
+
+.card-list {
+    display: flex;
+    list-style-type: none;
+    background-color: inherit;
+    padding: 2rem 2rem 1rem;
+    border-radius: 5px;
+}
+
+.card-item {   
+    margin-left: 10px;
+}
+
+.image{
+    width: 40px;
+    object-position: 0 -26px;
+}
+
+.form {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.input{
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    border-radius: 3px;
+    color: #fff;
+}
