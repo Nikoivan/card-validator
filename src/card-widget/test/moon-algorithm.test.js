@@ -7,3 +7,7 @@ test("to return true, for function moonAlgorithm", () => {
 test("to return false, for function moonAlgorithm", () => {
   expect(moonAlgorithm(4716468925085)).toBe(false);
 });
+
+test("to check by empty value in function moonAlgorithm", () => {
+  expect(moonAlgorithm("")).toBe(false);
+});

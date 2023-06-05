@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "",
+    assetModuleFilename: "images/[name][ext]",
   },
   module: {
     rules: [
@@ -34,9 +35,10 @@ module.exports = {
         use: "file-loader",
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|txt)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+      {},
     ],
   },
   plugins: [
