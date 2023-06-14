@@ -53,6 +53,7 @@ export default class CardWidget {
 
   onBtnClick(e) {
     e.preventDefault();
+    console.log("1");
 
     const value = this.input.value.trim();
 
@@ -62,6 +63,7 @@ export default class CardWidget {
     }
     if (moonAlgorithm(value)) {
       const paySys = checkPaySys(value);
+      console.log(paySys);
       this.activeCard(paySys);
     }
   }
@@ -95,6 +97,7 @@ export default class CardWidget {
   }
 
   activeCard(paySys) {
+    this.deactivated();
     this.actitivitedCard = this.controlCardList.find(
       (el) => el.paySys === paySys
     );
